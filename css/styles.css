@@ -305,14 +305,37 @@
     display: flex;
   }
     
-.activities>li{
+.activities-item{
+    position: relative;
     width: calc(100%-60px)/3;
 }
 
-.activities>li:not(:last-child){
+.activities-item:not(:last-child){
     margin-right: 30px;
 }
   
+.activities-item-header{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color:rgba(47, 48, 58, 0.8);
+   
+}
+.activities-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--primary-white-color);
+}
+}
 .section-title{
     margin-bottom: 50px;
   }

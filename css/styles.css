@@ -96,6 +96,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -134,6 +135,8 @@
     align-items: center; 
     color:rgba(117, 117, 117, 1)   
     ;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .contacts>li:not(:last-child){
     margin-right: 50px;
@@ -226,11 +229,12 @@
     color:var(--primary-white-color);
     background-color:var(--accent-color);
     cursor:pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .hero-button:hover,
 .hero-button:focus{
-    background: rgba(33, 150, 243, 1);
+    background-color: rgba(33, 150, 243, 1);
     
     }
 /* section features*/
@@ -408,7 +412,9 @@
     align-items:center;
     justify-content: center;
     border-radius:50%;
-    fill: #AFB1B8;;
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -451,6 +457,7 @@
     box-sizing: border-box;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .clients-link:hover,
@@ -466,6 +473,7 @@
 .clients-icon{
     display: block;
     fill: rgba(175, 177, 184, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -519,6 +527,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts:hover,
@@ -561,6 +570,7 @@
     justify-content: center;
     border-radius:50%;
     fill: var(--primary-white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
@@ -597,6 +607,8 @@
     cursor: pointer;
     border:transparent;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -627,6 +639,7 @@
 .examples-link{
     display: block;
     width: 370px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .examples-link:hover,

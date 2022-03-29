@@ -702,15 +702,40 @@
 }
 .modal{
     position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    
     width: 528px;
     height: 581px;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    
     background-color:rgba(255, 255, 255, 1);
     border-radius: 4px;
-    z-index: 999;
+   
    
 
+}
+.modal-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+
+    background-color:var(--primary-white-color);
+    border:1px solid rgba(0, 0, 0, 0.1);
+    border-radius:50%;
+
+    
+}
+.modal-btn-icon{
+    color:rgba(0, 0, 0, 1)
 
 }
